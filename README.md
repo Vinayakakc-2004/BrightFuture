@@ -1,0 +1,2 @@
+# BrightFuture
+School Management System
