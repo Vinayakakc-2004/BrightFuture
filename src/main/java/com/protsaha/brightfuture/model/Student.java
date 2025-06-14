@@ -8,18 +8,29 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Data
 public class Student {
     @Id
-    private String id;
+    private String studentId;
     private String name;
     private int age;
-    private String email;
-    private String course;
     private String dob;
     private String aadhar;
-    private String contactNumber1;
-    private String contactNumber2;
+    private ContactDetails contactDetails;
     private Address address;
     private Grade grade;
     private Parents parents;
 
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id='" + studentId + '\'' +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", dob='" + dob + '\'' +
+                ", aadhar='" + aadhar + '\'' +
+                ", contactDetails=" + contactDetails +
+                ", address=" + address +
+                ", grade=" + grade +
+                ", parents=" + parents +
+                '}';
+    }
     // Getters and Setters (Omitted for brevity)
 }
