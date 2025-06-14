@@ -34,6 +34,7 @@ public class StudentController {
     @PostMapping
     @Operation(summary = "Add a New Student", description = "Add a new student to the database.")
     public Student addStudent(@RequestBody Student student) {
+        System.out.println("addStudent");
         return studentService.addStudent(student);
     }
 
