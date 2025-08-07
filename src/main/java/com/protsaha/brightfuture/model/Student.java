@@ -16,4 +16,17 @@ public class Student {
     private PersonalDetails personalDetails;
     private PreviousSchool previousSchool;
     private Address address;
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "studentId='" + studentId + '\'' +
+                ", admission=" + admission +
+                ", aadharInfo=" + aadharInfo +
+                ", parents=" + parents +
+                ", personalDetails=" + personalDetails +
+                ", previousSchool=" + previousSchool +
+                ", address=" + address +
+                '}';
+    }
 }
